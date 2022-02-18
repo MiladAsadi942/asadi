@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.continer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.responsive{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-header{
+    width: 100%;
+    background: gainsboro;
+}
+.continer .top-header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.continer .top-header .logo .logos{
+    line-height: 60px;
+}
+
+.continer .top-header .logo .logos i{
+    margin: 0 10px;
+    color: rgb(49, 102, 104);
+}
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header{
+    width: 100%;
+    background: rgb(134, 219, 201);
+}
+
+nav{
+    padding-top: 5px;
+    
+}
+
+.header nav ul li{
+    display: inline-block;
+    list-style: none;
+   padding: 15px 30px;
+   
+}
+
+.header nav ul li a{
+    color: white; 
+    text-decoration: none;
+}
+.header .search{
+    width: 25%;
+    padding: 16px 0;
+    position: relative;
+    
+}
+
+.header .search input{
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0;
+    
+}
+
+.header .search a{
+    position: absolute;
+    padding: 8.6px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: red;
+}
+
+
+input :focus{
+    border: 0;
+    outline: 0;
+}
+
+.continer .bg{
+    width: 100%;
+    height: 80vh;
+    background-image: url(bg/bg2.png);
+    background-size: 35%;
+    background-position: 80% 60%;
+    background-repeat: no-repeat;
+}
+
+.bottom-header{
+    padding-top: 230px;
+    color: rgb(49, 102, 104);
+}
+
+.bottom-header p{
+    font-size: larger;
+}
+.bottom-header h2{
+    font-weight: bold;
+}
+
+.bottom-header button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: rgb(78, 134, 136);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.hide{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    .responsive{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    header{
+        width: 100%;
+        background: rgb(134, 219, 201);
+    }
+
+    .header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+
+    .header nav ul li{
+        display: inline-block;
+        list-style: none;
+       padding: 15px 20px;
+       
+    }
+
+
+    .header .search{
+        width: 35%;
+        padding: 13px 0;
+        position: relative;
+        padding-left: 60px;
+        
+    }
+    
+    .header .search input{
+        width: 100%;
+        height: 35px;
+        padding: 0 5px;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 0;
+        
+    }
+    
+    .header .search a{
+        position: absolute;
+        padding: 6.1px 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: red;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    
+
+   .responsive{
+       width: auto;
+
+   } 
+    .header{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    
+    header{
+        width: 180px;
+        background: rgb(134, 219, 201);
+        height: 100vh;
+        position: absolute;
+        right: -180px;
+        transition: right 1s;
+        
+    }
+
+    .header nav ul{
+        /* position: absolute;
+        left: -30px; */
+    }
+    
+    nav{
+        padding: 0;
+    }
+
+    .header nav ul li{
+        display: block;
+        list-style: none;
+       width: 180px;
+       border-bottom: 1px solid white;
+
+       
+    }
+    
+    .header nav ul li a{
+        color: white; 
+        text-decoration: none;
+    }
+
+    .hide img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .hide{
+        display: block;
+        position: absolute;
+        left: -60px;
+        
+    }
+    #close{
+        display: none;
+        
+    }
+
+    .header .search{
+        width: 80%;
+        padding: 16px 0;
+        
+    }
+    
+    .header .search input{
+        width: 100%;
+        height: 30px;
+        padding: 0 5px;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 0;
+        
+    }
+
+    .header .search a{
+        position: absolute;
+        padding: 4px 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: red;
+    }
+
+    .top-header{
+        width: 100%;
+        background: gainsboro;
+        padding: 0 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
