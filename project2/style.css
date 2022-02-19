@@ -6,180 +6,93 @@
 
 .continer{
     width: 100%;
-    height: 100vh;
-
+    overflow-y: hidden;
+    
 }
 
-.continer header{
+header{
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    padding: 20px 0;
+    background: gainsboro;
+    color: gray;
+    padding: 10px 40px;
+    transition: all 2s;
+    
+}
+#close{
+    display: none;
 }
 
+#opens{
+    display: none;
+}
 
 header nav ul li{
     display: inline-block;
-    color: white;
     list-style: none;
-    padding: 0 20px;
+    padding: 7px 20px;
 }
 
 header nav ul li a{
-    display: block;
-    color: white;
+    color: gray;
     text-decoration: none;
-    text-align: center;
+    display: block;
 }
 
-header .logo-tx{
-    color: white;
-    text-align: center;
-}
 
-.hide{
-    width: 50%;
-    height: 50%;
-    background-color: red;
-    position: absolute;
-    top: -450px;
-    left: 40%;
-    transition: all 2s;
-}
 
-.hide:hover{
-    top: 0;
-}
-.hide{
-    display: none;
-}
-.logos{
-    display: none;
-}
 
-.logos2{
-    display: none;
-}
-
-@media only screen and (max-width: 800px) {
-
+@media screen and (max-width: 992px) {
     header{
+        position: relative;
+        width: 100%;
+        padding: 20px;
         
-        width: 30%;
+    }
+
+    header nav{
+        background-color: gold;
+        position: absolute;
+        top: 0;
+        width: 100%;
         height: 100vh;
-        background-color: black;
-       position: relative;
-       left: -30%;
-        
+        text-align: center;
+       padding-top: 10px;
+       top: -100vh;
+       border-bottom-left-radius: 50%;
+       border-bottom-right-radius: 50%;
+       right: 0;
     }
-    .logo-tx{
-        display: none;
+    header nav ul{
+        margin-bottom: 250px;
     }
-
-    /* nav{
-
-        
-    } */
-    /* header nav ul{
-        width: 100%;  
-        display: block;
-         
-        
-        
-       
-    } */
 
     header nav ul li{
-        width: 110px;
-        padding: 10% 20%;
         display: block;
-        border-bottom: 1px solid white;
-
-    }
-    .mobile-head{
-        position: relative;
+        padding: 10px 5px;
+        border: 1px solid white;
+        border-radius: 20px;
     }
 
-    .logos{
-       position: absolute;
-       right: -26px;
-       display: block;
-       top: 0;
-       cursor: pointer;
-        
-        
-    }
-
-    .logos img{
-        width: 25px;
-        height: 25px;
-        
-    }
-
-    .logos2 img{
-        width: 25px;
-        height: 25px;
-    }
-
-    .logos2{
+    header .menu{
         position: absolute;
-        right: -26px;
-        display: block;
-        top: 0;
-        cursor: pointer;
-        display: none;         
-     }
-
-    
-     .hide{
-        width: 100%;
-        height: 50%;
-        background: rgba(0,0, 0,0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 2s;
-        display: block;
-        top: -70%;
+        right: 20px;
+        top: 16px;
     }
 
-    .hide form{
-        width: 100%;
-        display: block;
-        margin-top: 25%;
-       margin-left: 80px;
-    }
-    .hide form h1{
-        margin-left: 14%;
-        color: antiquewhite;
-    }
-    .hide input{
-        width: 60%;
-        display: block;
-        margin: 4% 0;
-        padding: 1%;
+    header .menu img{
+        width: 40px;
+        height: 40px;
     }
 
-    .hide button{
-        width: 60%;
-        background: yellow;
-        text-align: center;
-        padding: 2% 2%;
-    }
-
-    .link{
-        position: absolute;
-        left: 43%;
+    #close{
+        display: block;
     }
     
-.right-logo{
-    position: absolute;
-    right: 1px;
+    #opens{
+        display: block;
+    }
+    .logo h3{
+        font-size: 17px;
+    }
 }
-
-    
-}
-
-
-
-

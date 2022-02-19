@@ -1,41 +1,46 @@
-let header = document.getElementById('header');
-let logo = document.getElementById('log');
-let log2 = document.getElementById('log2');
-let conti = document.getElementById('conti');
+// var user = document.getElementById('user');
+// var pass = document.getElementById('pass');
+// var btn = document.getElementById('btn')
+// var opens = document.getElementById('open')
+// var closee = document.getElementById('close')
+// var form = document.getElementById('form')
+// var cont = document.getElementById('continer');
 
 
-logo.addEventListener('click' , function(e){
-    header.style.left = '0';
-    header.style.transition = 'all 1s';
+// opens.addEventListener('click' , function(e){
+//     form.style.top = '0';
     
-    logo.style.display = 'none';
-    log2.style.display = 'block';
-    e.preventDefault();
+//     closee.style.display = 'block'
+//     closee.style.zIndex = '1'
+//     opens.style.display = 'none'
+    
+// })
+
+// closee.addEventListener('click' , function(e){
+//     form.style.top = '-70%';
+//     closee.style.display = 'none';
+//     opens.style.display = 'block';
+// })
+
+
+var opens = document.getElementById('opens');
+var closee = document.getElementById('close');
+var header = document.getElementById('nav');
+var cont = document.getElementById('header');
+
+opens.addEventListener('click' , function(){
+    header.style.top = '0'
+    opens.style.display = 'none';
+    header.style.transition = 'all 2s'
+    header.style.zIndex = '10'
+    
 })
 
-log2.addEventListener('click' , function(e){
-    header.style.left = '-30%';
-    header.style.transition = 'all 1s'
-    log2.style.display = 'block';
-    logo.style.display = 'block';
-    log2.style.display = 'none';
-    e.preventDefault();
-
+closee.addEventListener('click' , function(){
+    // header.style.display = 'none';
+    header.style.top = '-100vh'
+    opens.style.display = 'block';
+    
 })
-
-let lnk = document.getElementById('lnk');
-let tophide = document.getElementById('top-hide');
-
-lnk.addEventListener('click' , function(e){
-    tophide.style.top = '0';
-    tophide.style.zIndex = '1';
-    e.preventDefault();
-})
-
-
-
-
-
-
 
 

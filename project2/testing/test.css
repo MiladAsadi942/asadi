@@ -1,0 +1,25 @@
+.test{
+    width: 180px;
+    height: 180px;
+    background: yellow;
+
+    transition: all 2s;
+    position: absolute;
+    right: -30%;
+    
+}
+
+.cont{
+    width: 50%;
+    height: 50vh;
+    border: 1px solid black;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* .cont:hover > .test{
+
+    visibility: visible;
+  opacity: 1;
+} */
+
