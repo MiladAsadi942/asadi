@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.continer{
+    width: 100%;
+    overflow-y: hidden;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: gainsboro;
+    color: gray;
+    padding: 10px 40px;
+    transition: all 2s;
+    
+}
+#close{
+    display: none;
+}
+
+#opens{
+    display: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 7px 20px;
+}
+
+header nav ul li a{
+    color: gray;
+    text-decoration: none;
+    display: block;
+}
+
+.mm{
+    width: 100%;
+    padding: 0 5px;
+    background-color: gold;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+
+
+
+/* slider card */
+
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #FF676D;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+
+.masolat{
+    background-color: #FF676D;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    header{
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    header nav{
+        background-color: gold;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+       padding-top: 10px;
+       top: -100vh;
+       border-bottom-left-radius: 50%;
+       border-bottom-right-radius: 50%;
+       right: 0;
+    }
+    header nav ul{
+        margin-bottom: 250px;
+    }
+
+    header nav ul li{
+        display: block;
+        padding: 10px 5px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+
+    header .menu{
+        position: absolute;
+        right: 20px;
+        top: 16px;
+    }
+
+    header .menu img{
+        width: 40px;
+        height: 40px;
+    }
+
+    #close{
+        display: block;
+    }
+    
+    #opens{
+        display: block;
+    }
+    .logo h3{
+        font-size: 17px;
+    }
+}
